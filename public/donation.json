@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "picture": "https://i.ibb.co/ypb7Sz1/Clothing.png",
+        "title": "Stylish T-shirt",
+        "category": "clothing",
+        "category_bg": "rgba(121, 194, 63, 0.20)",
+        "card_bg": "rgba(121, 194, 63, 0.15)",
+        "text_button_bg": "#79C23F",
+        "description": "A trendy and comfortable t-shirt for everyday wear.",
+        "price": 19.99
+    },
+    {
+        "id": 2,
+        "picture": "https://i.ibb.co/r3RzCZ7/Education.png",
+        "title": "Good Education",
+        "category": "education",
+        "category_bg": "rgba(255, 68, 74, 0.20)",
+        "card_bg": "rgba(255, 68, 74, 0.15)",
+        "text_button_bg": "#FF444A",
+        "description": "There are many things that can be done to ensure that all people have access to a good education. Governments can invest in public schools, provide financial assistance to students, and make sure that all schools have qualified teachers and resources. Families can support their children's education by creating a learning environment at home and helping them with their schoolwork. Teachers can create a positive and supportive learning environment for their students and challenge them to reach their full potential.",
+        "price": 12.99
+    },
+    {
+        "id": 3,
+        "picture": "https://i.ibb.co/TPBt1mL/Health.png",
+        "title": "Fitness Tracker",
+        "category": "health",
+        "category_bg": "rgba(0, 82, 255, 0.20)",
+        "card_bg": "rgba(0, 82, 255, 0.15)",
+        "text_button_bg": "#0052FF",
+        "description": "Track your health and fitness goals with this device.",
+        "price": 49.99
+    },
+    {
+        "id": 4,
+        "picture": "https://i.ibb.co/pf9tKYH/Food.png",
+        "title": "Organic Apples",
+        "category": "food",
+        "category_bg": "rgba(248, 113, 71, 0.20)",
+        "card_bg": "rgba(248, 113, 71, 0.15)",
+        "text_button_bg": "#F87147",
+        "description": "Fresh and delicious organic apples for a healthy snack.",
+        "price": 3.49
+    },
+    {
+        "id": 5,
+        "picture": "https://i.ibb.co/ypb7Sz1/Clothing.png",
+        "title": "Designer Jeans",
+        "category": "clothing",
+        "category_bg": "rgba(121, 194, 63, 0.20)",
+        "card_bg": "rgba(121, 194, 63, 0.15)",
+        "text_button_bg": "#79C23F",
+        "description": "High-quality designer jeans for a stylish look.",
+        "price": 79.99
+    },
+    {
+        "id": 6,
+        "picture": "https://i.ibb.co/r3RzCZ7/Education.png",
+        "title": "History Book",
+        "category": "education",
+        "category_bg": "rgba(255, 68, 74, 0.20)",
+        "card_bg": "rgba(255, 68, 74, 0.15)",
+        "text_button_bg": "#FF444A",
+        "description": "Explore the fascinating world of history with this book.",
+        "price": 15.99
+    },
+    {
+        "id": 7,
+        "picture": "https://i.ibb.co/TPBt1mL/Health.png",
+        "title": "Yoga Mat",
+        "category": "health",
+        "category_bg": "rgba(0, 82, 255, 0.20)",
+        "card_bg": "rgba(0, 82, 255, 0.15)",
+        "text_button_bg": "#0052FF",
+        "description": "A comfortable yoga mat for your daily practice.",
+        "price": 24.99
+    },
+    {
+        "id": 8,
+        "picture": "https://i.ibb.co/pf9tKYH/Food.png",
+        "title": "Fresh Strawberries",
+        "category": "food",
+        "category_bg": "rgba(248, 113, 71, 0.20)",
+        "card_bg": "rgba(248, 113, 71, 0.15)",
+        "text_button_bg": "#F87147",
+        "description": "Juicy and sweet organic strawberries for your desserts.",
+        "price": 5.99
+    },
+    {
+        "id": 9,
+        "picture": "https://i.ibb.co/ypb7Sz1/Clothing.png",
+        "title": "Casual Sneakers",
+        "category": "clothing",
+        "category_bg": "rgba(121, 194, 63, 0.20)",
+        "card_bg": "rgba(121, 194, 63, 0.15)",
+        "text_button_bg": "#79C23F",
+        "description": "Comfortable sneakers for your everyday adventures.",
+        "price": 39.99
+    },
+    {
+        "id": 10,
+        "picture": "https://i.ibb.co/r3RzCZ7/Education.png",
+        "title": "Science Kit",
+        "category": "education",
+        "category_bg": "rgba(255, 68, 74, 0.20)",
+        "card_bg": "rgba(255, 68, 74, 0.15)",
+        "text_button_bg": "#FF444A",
+        "description": "A science kit for young scientists to explore the world.",
+        "price": 29.99
+    },
+    {
+        "id": 11,
+        "picture": "https://i.ibb.co/TPBt1mL/Health.png",
+        "title": "Protein Powder",
+        "category": "health",
+        "category_bg": "rgba(0, 82, 255, 0.20)",
+        "card_bg": "rgba(0, 82, 255, 0.15)",
+        "text_button_bg": "#0052FF",
+        "description": "Fuel your workouts with high-quality protein powder.",
+        "price": 29.99
+    },
+    {
+        "id": 12,
+        "picture": "https://i.ibb.co/pf9tKYH/Food.png",
+        "title": "Organic Quinoa",
+        "category": "food",
+        "category_bg": "rgba(248, 113, 71, 0.20)",
+        "card_bg": "rgba(248, 113, 71, 0.15)",
+        "text_button_bg": "#F87147",
+        "description": "Nutrient-rich organic quinoa for a healthy meal.",
+        "price": 6.99
+    }
+]
