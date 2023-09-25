@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import DonationMade from "../DonationMade/DonationMade";
+import { Link } from "react-router-dom";
+import Statistics from "../Statistics/Statistics";
 
 
 
@@ -7,7 +9,7 @@ const Donation = () => {
 
     const [donations, setDonations] = useState([]);
     const [noFound, setNoFound] = useState(false);
-    const [donationLength, setDonationLength] = useState(4);
+    const [showMore, setShowMore] = useState(false);
 
     useEffect(() => {
         const donationsMade = JSON.parse(localStorage.getItem('donations'));
@@ -16,14 +18,14 @@ const Donation = () => {
             setDonations(donationsMade)
         }
         else {
-            setNoFound("No Data Found")
+            setNoFound("Make Some Donation")
         }
     }, [])
 
     const handleRemove = () => {
         localStorage.clear()
         setDonations([])
-        setNoFound("No Data Found")
+        setNoFound("Make Some Donation")
     }
 
 
@@ -31,6 +33,11 @@ const Donation = () => {
         <div>
             <div className="flex justify-between items-center">
                 <h1 className="text-2xl font-semibold">Total Donations : {donations.length} </h1>
+                <div>
+                {
+                    noFound? <Link to="/"><button className="bg-red-500 p-2 text-white overflow-hidden hover:scale-105 transition-transform transform origin-center">{noFound}</button></Link> : ""
+                }
+                </div>
 
                 <div>
                     {
@@ -41,18 +48,18 @@ const Donation = () => {
 
             <div className="grid grid-cols-2 gap-8 mt-10">
                 {
-
-                    donations.slice(0,donationLength).map(donation => <DonationMade key={donation.id} donation={donation}></DonationMade>)
+                    donations.length > 0 && showMore? donations.map(donation => <DonationMade key={donation.id} donation={donation}></DonationMade>) :
+                    donations.slice(0,4).map(donation => <DonationMade key={donation.id} donation={donation}></DonationMade>)
+                    
                 }
             </div>
             <div>
-            {
-                donationLength < 5? <div className="flex justify-center my-10">
-                <button onClick={()=> setDonationLength(donations.length)} className="bg-red-500 text-white p-2 overflow-hidden hover:scale-105 transition-transform transform origin-center">Show All</button>
-            </div> : <div className="flex justify-center my-10">
-                <button onClick={()=> setDonationLength(4)} className="bg-red-500 text-white p-2 overflow-hidden hover:scale-105 transition-transform transform origin-center">Show Less</button>
+                {
+                    donations.length > 4 && <button className="bg-red-500 text-white p-2 overflow-hidden hover:scale-105 transition-transform transform origin-center mt-10 block mx-auto" onClick={()=> setShowMore(!showMore)}>{showMore? "Show Less" : "Show More"}</button>
+                }
             </div>
-            }
+            <div className="hidden">
+                <Statistics donations={donations}></Statistics>
             </div>
         </div>
     );
