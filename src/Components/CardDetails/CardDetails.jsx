@@ -62,7 +62,7 @@ const CardDetails = () => {
                         <p className="mb-5">{description}</p>
                     </div>
                 </div>
-                <ToastContainer position="bottom-right"></ToastContainer>
+                <ToastContainer position="top-left"></ToastContainer>
         </div>
     );
 };
