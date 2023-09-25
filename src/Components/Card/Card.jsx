@@ -15,7 +15,7 @@ const Card = ({ card }) => {
         <section>
             <Link to={`/makedonation/${id}`}>
 
-                <div className={`card shadow-xl lg:h-96 overflow-hidden hover:scale-105 transition-transform transform origin-center`} style={cardBg}>
+                <div className={`card shadow-xl md:h-96 sm:h-64 lg:h-96 overflow-hidden hover:scale-105 transition-transform transform origin-center`} style={cardBg}>
                     <div className={`rounded-lg`}>
                         <figure><img className="h-48 w-full" src={picture} alt="Shoes" /></figure>
                         <div className={`rounded-sm w-20 mt-10 ml-5 flex items-center justify-center`} style={categoryBg}>

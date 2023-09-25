@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom"
-
+import { HiMenuAlt1 } from "react-icons/hi";
 
 const NavBar = () => {
 
@@ -19,13 +19,13 @@ const NavBar = () => {
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                                <img src="/src/assets/Resources/Logo.png" alt="" />
+                                <HiMenuAlt1></HiMenuAlt1>
                             </label>
                             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                                 {links}
                             </ul>
                         </div>
-                        <img src="/src/assets/Resources/Logo.png" alt="" />
+                        <img src="https://i.ibb.co/cJkXDmw/Logo.png" alt="" />
                     </div>
                     <div className="navbar-end hidden lg:flex">
                         <ul className="menu menu-horizontal px-1 gap-6">
