@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import DonationMade from "../DonationMade/DonationMade";
 import { Link } from "react-router-dom";
-import Statistics from "../Statistics/Statistics";
+
 
 
 
@@ -30,7 +30,7 @@ const Donation = () => {
 
 
     return (
-        <div>
+        <div className="p-6 md:p-4 lg:p-0">
             <div className="flex justify-between items-center">
                 <h1 className="text-2xl font-semibold">Total Donations : {donations.length} </h1>
                 <div>
@@ -55,11 +55,8 @@ const Donation = () => {
             </div>
             <div>
                 {
-                    donations.length > 4 && <button className="bg-red-500 text-white p-2 overflow-hidden hover:scale-105 transition-transform transform origin-center mt-10 block mx-auto" onClick={()=> setShowMore(!showMore)}>{showMore? "Show Less" : "Show More"}</button>
+                    donations.length > 4 && <button className="bg-[#009444] w-28 rounded-sm text-white p-2 overflow-hidden hover:scale-105 transition-transform transform origin-center mt-10 block mx-auto" onClick={()=> setShowMore(!showMore)}>{showMore? "See Less" : "See All"}</button>
                 }
-            </div>
-            <div className="hidden">
-                <Statistics donations={donations}></Statistics>
             </div>
         </div>
     );

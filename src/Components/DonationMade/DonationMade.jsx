@@ -14,7 +14,7 @@ const DonationMade = ({ donation }) => {
 
     return (
         <div>
-            <div className={`shadow-xl h-52 overflow-hidden hover:scale-105 transition-transform transform origin-center`} style={cardBg}>
+            <div className={`shadow-xl h-60 lg:h-52 md:h-52 overflow-hidden hover:scale-105 transition-transform transform origin-center`} style={cardBg}>
                 <div className={`flex h-full`}>
                     <figure className="w-2/5 h-full"><img className="h-full w-full" src={picture} alt="Shoes" /></figure>
                     <div className="flex flex-col ml-8 gap-y-2">

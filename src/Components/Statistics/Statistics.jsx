@@ -5,7 +5,7 @@ import { PieChart, Pie, Tooltip, Legend, Cell, ResponsiveContainer } from "recha
 const Statistics = () => {
 
     const [donations, setDonations] = useState([]);
-    const COLORS = ['#067d12', '#f53845'];
+    const COLORS = ['#FF444A', '#00C49F'];
 
     useEffect(() => {
         const donationsMade = JSON.parse(localStorage.getItem('donations'));
@@ -21,23 +21,23 @@ const Statistics = () => {
 
     const data = [
         {
-            "name": "Remaining Donation (%)",
-            "value": remainingPercentage
+            "name": "Total Donation (%)",
+            "value": (remainingPercentage.toFixed(2))/1
         },
         {
             "name": "My Donation (%)",
-            "value": donationPercentage
+            "value": (donationPercentage.toFixed(2))/1
         },
     ]
 
     return (
-        <div className=" flex items-center justify-center">
+        <div className="w-full flex items-center justify-center">
             
-            <div className="">
-                <ResponsiveContainer width={730} height={450}>
+            <div className="w-full">
+                <ResponsiveContainer width="100%" height={450}>
                 <PieChart width={730} height={450}>
                     {/* <Pie data={data1} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={50} fill="#8884d8" /> */}
-                    <Pie data={data} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={60} outerRadius={80} fill="#d11b24" label>
+                    <Pie data={data} dataKey="value" nameKey="name" cx="50%" cy="50%" innerRadius={0} outerRadius={100} fill="#d11b24" label>
                         {data.map((entry, index) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                         ))}

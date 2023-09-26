@@ -5,7 +5,7 @@ import Donation from "../Donation/Donation";
 import Statistics from "../Statistics/Statistics";
 import CardDetails from "../CardDetails/CardDetails";
 import ErrorPage from "../ErrorPage/ErrorPage";
-
+import "./Route.css";
 
 const myCreatedRoute = createBrowserRouter([
     {

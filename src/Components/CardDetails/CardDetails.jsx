@@ -57,12 +57,23 @@ const CardDetails = () => {
             
             </div>
             <div className="mt-16">
-                    <div className="">
+                    <div className="p-6 md:p-4 lg:p-0">
                         <h1 className="mb-5 text-5xl font-bold">{title}</h1>
                         <p className="mb-5">{description}</p>
                     </div>
                 </div>
-                <ToastContainer position="top-left"></ToastContainer>
+                <ToastContainer
+                position="top-center"
+                autoClose={4000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+                ></ToastContainer>
         </div>
     );
 };
