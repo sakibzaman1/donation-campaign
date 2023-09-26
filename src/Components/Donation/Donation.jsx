@@ -41,7 +41,7 @@ const Donation = () => {
 
                 <div>
                     {
-                        donations.length > 0 && <button onClick={handleRemove} className="bg-red-500 text-white p-2 overflow-hidden hover:scale-105 transition-transform transform origin-center">Remove All</button>
+                        donations.length > 0 && <button onClick={handleRemove} className="bg-red-500 text-white p-2 overflow-hidden hover:scale-105 transition-transform transform origin-center rounded-sm">Remove All</button>
                     }
                 </div>
             </div>
